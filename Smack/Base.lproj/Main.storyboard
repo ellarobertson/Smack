@@ -468,7 +468,7 @@
                         <viewLayoutGuide key="safeArea" id="7Mi-Bx-0Wa"/>
                     </view>
                     <connections>
-                        <segue destination="Zfz-nW-CIN" kind="unwind" unwindAction="prepareForUnwindWithSegue:" id="NPz-dt-icI"/>
+                        <segue destination="Zfz-nW-CIN" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="NPz-dt-icI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WOd-Cx-Gg3" userLabel="First Responder" sceneMemberID="firstResponder"/>
