@@ -23,6 +23,7 @@
 		492FAA5920CF4EBA006C1EFA /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FAA5820CF4EBA006C1EFA /* UserDataService.swift */; };
 		497C6BB120D0147600D724E1 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C6BB020D0147600D724E1 /* AvatarPickerVC.swift */; };
 		497C6BB320D025EB00D724E1 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C6BB220D025EB00D724E1 /* AvatarCell.swift */; };
+		497C6BB520D0927500D724E1 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C6BB420D0927500D724E1 /* CircleImage.swift */; };
 		76F139446335CE1B25FC8858 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A2B60BB562D7D8D7FFADB1E /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		492FAA5820CF4EBA006C1EFA /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		497C6BB020D0147600D724E1 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		497C6BB220D025EB00D724E1 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		497C6BB420D0927500D724E1 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		6A2B60BB562D7D8D7FFADB1E /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -136,6 +138,7 @@
 				492FAA4820C8CF85006C1EFA /* GradientView.swift */,
 				492FAA5620CF21BD006C1EFA /* RoundedButton.swift */,
 				497C6BB220D025EB00D724E1 /* AvatarCell.swift */,
+				497C6BB420D0927500D724E1 /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				492FAA4720C5DFBD006C1EFA /* ChannelVC.swift in Sources */,
 				497C6BB120D0147600D724E1 /* AvatarPickerVC.swift in Sources */,
 				492FAA5720CF21BD006C1EFA /* RoundedButton.swift in Sources */,
+				497C6BB520D0927500D724E1 /* CircleImage.swift in Sources */,
 				492FAA4520C5DFA9006C1EFA /* ChatVC.swift in Sources */,
 				492FAA5920CF4EBA006C1EFA /* UserDataService.swift in Sources */,
 				492FAA5220C9D1AB006C1EFA /* CreateAccountVC.swift in Sources */,
