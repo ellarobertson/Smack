@@ -24,6 +24,8 @@
 		497C6BB120D0147600D724E1 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C6BB020D0147600D724E1 /* AvatarPickerVC.swift */; };
 		497C6BB320D025EB00D724E1 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C6BB220D025EB00D724E1 /* AvatarCell.swift */; };
 		497C6BB520D0927500D724E1 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C6BB420D0927500D724E1 /* CircleImage.swift */; };
+		498FA28020D0C612004227E3 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498FA27E20D0C612004227E3 /* ProfileVC.swift */; };
+		498FA28120D0C612004227E3 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 498FA27F20D0C612004227E3 /* ProfileVC.xib */; };
 		76F139446335CE1B25FC8858 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A2B60BB562D7D8D7FFADB1E /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +53,8 @@
 		497C6BB020D0147600D724E1 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		497C6BB220D025EB00D724E1 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		497C6BB420D0927500D724E1 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		498FA27E20D0C612004227E3 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		498FA27F20D0C612004227E3 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		6A2B60BB562D7D8D7FFADB1E /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -96,6 +100,7 @@
 		492FAA2920C5C3CC006C1EFA /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				498FA28220D0C637004227E3 /* XIBs */,
 				492FAA5320CF00D2006C1EFA /* Services */,
 				492FAA4A20C9AC11006C1EFA /* Utilities */,
 				492FAA4320C5DF89006C1EFA /* Model */,
@@ -128,6 +133,7 @@
 				492FAA4F20C9CA7E006C1EFA /* LoginVC.swift */,
 				492FAA5120C9D1AB006C1EFA /* CreateAccountVC.swift */,
 				497C6BB020D0147600D724E1 /* AvatarPickerVC.swift */,
+				498FA27E20D0C612004227E3 /* ProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -165,6 +171,14 @@
 				492FAA5820CF4EBA006C1EFA /* UserDataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		498FA28220D0C637004227E3 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				498FA27F20D0C612004227E3 /* ProfileVC.xib */,
+			);
+			path = XIBs;
 			sourceTree = "<group>";
 		};
 		B4573CEFBFF9B42866FC4FCD /* Pods */ = {
@@ -238,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				498FA28120D0C612004227E3 /* ProfileVC.xib in Resources */,
 				492FAA3520C5C3CC006C1EFA /* LaunchScreen.storyboard in Resources */,
 				492FAA3220C5C3CC006C1EFA /* Assets.xcassets in Resources */,
 				492FAA3020C5C3CC006C1EFA /* Main.storyboard in Resources */,
@@ -296,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				498FA28020D0C612004227E3 /* ProfileVC.swift in Sources */,
 				492FAA4720C5DFBD006C1EFA /* ChannelVC.swift in Sources */,
 				497C6BB120D0147600D724E1 /* AvatarPickerVC.swift in Sources */,
 				492FAA5720CF21BD006C1EFA /* RoundedButton.swift in Sources */,
