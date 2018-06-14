@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Avenir.ttc">
-            <string>Avenir-Book</string>
-        </array>
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
-            <string>HelveticaNeue-Bold</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Reveal View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -132,7 +123,7 @@
                                 <rect key="frame" x="0.0" y="126" width="375" height="426"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="DNn-Qr-MLg">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ChannelCell" id="DNn-Qr-MLg" customClass="ChannelCell" customModule="Smack" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DNn-Qr-MLg" id="wj2-Vb-AFD">
@@ -154,37 +145,46 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="channelName" destination="2o9-Cv-OoW" id="rzh-AZ-1Oh"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qww-ds-L0g">
-                                <rect key="frame" x="281" y="84" width="22" height="22"/>
-                                <state key="normal" image="addChannelButton">
-                                    <color key="titleColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzl-hL-wCY">
+                                <rect key="frame" x="278" y="84" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="GVA-5h-mBV"/>
+                                    <constraint firstAttribute="height" constant="22" id="Lbd-RA-d1o"/>
+                                </constraints>
+                                <state key="normal" image="addChannelButton"/>
+                                <connections>
+                                    <action selector="addChannelPressed:" destination="9gD-lO-QQw" eventType="touchUpInside" id="8t8-pG-Gan"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="I3X-0N-lbe" firstAttribute="leading" secondItem="UTr-JQ-YAt" secondAttribute="leading" constant="20" id="2rS-In-L0l"/>
+                            <constraint firstItem="qzl-hL-wCY" firstAttribute="centerY" secondItem="gdU-VM-b8G" secondAttribute="centerY" id="4CT-gp-MyV"/>
                             <constraint firstItem="gdU-VM-b8G" firstAttribute="top" secondItem="b6h-mC-AC6" secondAttribute="bottom" constant="20" id="96U-4N-Gkq"/>
-                            <constraint firstItem="Qww-ds-L0g" firstAttribute="centerY" secondItem="gdU-VM-b8G" secondAttribute="centerY" id="Cmm-Ur-Vsd"/>
                             <constraint firstItem="RII-Hz-m48" firstAttribute="leading" secondItem="I3X-0N-lbe" secondAttribute="trailing" constant="20" id="Ezm-t2-pjE"/>
                             <constraint firstItem="1mG-jJ-bSN" firstAttribute="leading" secondItem="UTr-JQ-YAt" secondAttribute="leading" id="J7s-dZ-aUY"/>
                             <constraint firstItem="1mG-jJ-bSN" firstAttribute="trailing" secondItem="UTr-JQ-YAt" secondAttribute="trailing" id="Mrs-eV-cN2"/>
                             <constraint firstItem="gdU-VM-b8G" firstAttribute="leading" secondItem="UTr-JQ-YAt" secondAttribute="leading" constant="20" id="RFB-Ck-itm"/>
                             <constraint firstItem="UTr-JQ-YAt" firstAttribute="bottom" secondItem="I3X-0N-lbe" secondAttribute="bottom" constant="20" id="Vau-Q4-p8E"/>
+                            <constraint firstItem="UTr-JQ-YAt" firstAttribute="trailing" secondItem="qzl-hL-wCY" secondAttribute="trailing" constant="75" id="Zs4-2E-Sfc"/>
                             <constraint firstItem="I3X-0N-lbe" firstAttribute="top" secondItem="1mG-jJ-bSN" secondAttribute="bottom" constant="20" id="j3U-JV-Pan"/>
                             <constraint firstItem="b6h-mC-AC6" firstAttribute="top" secondItem="UTr-JQ-YAt" secondAttribute="top" constant="24" id="k6F-2N-opW"/>
-                            <constraint firstItem="UTr-JQ-YAt" firstAttribute="trailing" secondItem="Qww-ds-L0g" secondAttribute="trailing" constant="72" id="nt0-3X-3mo"/>
-                            <constraint firstItem="1mG-jJ-bSN" firstAttribute="top" secondItem="Qww-ds-L0g" secondAttribute="bottom" constant="20" id="pDI-KH-Kmh"/>
                             <constraint firstItem="RII-Hz-m48" firstAttribute="centerY" secondItem="I3X-0N-lbe" secondAttribute="centerY" id="pOO-M7-Jat"/>
                             <constraint firstItem="b6h-mC-AC6" firstAttribute="leading" secondItem="UTr-JQ-YAt" secondAttribute="leading" constant="20" id="qAc-nE-HrY"/>
+                            <constraint firstItem="1mG-jJ-bSN" firstAttribute="top" secondItem="qzl-hL-wCY" secondAttribute="bottom" constant="20" id="umT-tV-Er0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UTr-JQ-YAt"/>
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="RII-Hz-m48" id="Zs1-vd-h0r"/>
+                        <outlet property="tableView" destination="1mG-jJ-bSN" id="jPo-HV-8bv"/>
                         <outlet property="userImg" destination="I3X-0N-lbe" id="dhA-sS-lVl"/>
                         <segue destination="nZl-YG-hrC" kind="show" identifier="toLogin" id="o96-xC-FM1"/>
                     </connections>
