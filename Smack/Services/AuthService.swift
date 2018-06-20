@@ -70,7 +70,6 @@ class AuthService {
             "email": lowerCaseEmail,
             "password": password
         ]
-        
         Alamofire.request(URL_LOGIN, method: .post, parameters: body, encoding: JSONEncoding.default, headers: HEADER).responseJSON { (response) in
             
             if response.result.error == nil {
@@ -82,7 +81,8 @@ class AuthService {
                 completion(true)
             } else {
                 completion(false)
-                debugPrint(response.result.error as Any)
+                debugPrint("Crashed logging in user")
+                //response.result.error as Any
             }
         }
     }
@@ -107,7 +107,8 @@ class AuthService {
                 
             } else {
                 completion(false)
-                debugPrint(response.result.error as Any)
+                debugPrint("Crashed creating user")
+                //response.result.error as Any
             }
         }
     }
