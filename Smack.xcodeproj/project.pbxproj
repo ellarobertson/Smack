@@ -30,6 +30,7 @@
 		498FA28020D0C612004227E3 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498FA27E20D0C612004227E3 /* ProfileVC.swift */; };
 		498FA28120D0C612004227E3 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 498FA27F20D0C612004227E3 /* ProfileVC.xib */; };
 		49BA497520DAC80900BA96DF /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BA497420DAC80900BA96DF /* SocketService.swift */; };
+		49BA497720DB1DA000BA96DF /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BA497620DB1DA000BA96DF /* Message.swift */; };
 		49FB04BC20D2F67E006B71C6 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB04BB20D2F67E006B71C6 /* MessageService.swift */; };
 		49FB04C120D2F72A006B71C6 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB04C020D2F72A006B71C6 /* Channel.swift */; };
 		76F139446335CE1B25FC8858 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A2B60BB562D7D8D7FFADB1E /* Pods_Smack.framework */; };
@@ -65,6 +66,7 @@
 		498FA27E20D0C612004227E3 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		498FA27F20D0C612004227E3 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		49BA497420DAC80900BA96DF /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
+		49BA497620DB1DA000BA96DF /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		49FB04BB20D2F67E006B71C6 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 		49FB04C020D2F72A006B71C6 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		6A2B60BB562D7D8D7FFADB1E /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				49FB04C020D2F72A006B71C6 /* Channel.swift */,
+				49BA497620DB1DA000BA96DF /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				492FAA4720C5DFBD006C1EFA /* ChannelVC.swift in Sources */,
 				497C6BB120D0147600D724E1 /* AvatarPickerVC.swift in Sources */,
 				492FAA5720CF21BD006C1EFA /* RoundedButton.swift in Sources */,
+				49BA497720DB1DA000BA96DF /* Message.swift in Sources */,
 				49FB04C120D2F72A006B71C6 /* Channel.swift in Sources */,
 				497C6BB520D0927500D724E1 /* CircleImage.swift in Sources */,
 				49FB04BC20D2F67E006B71C6 /* MessageService.swift in Sources */,
