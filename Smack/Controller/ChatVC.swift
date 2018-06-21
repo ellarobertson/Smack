@@ -15,10 +15,15 @@ class ChatVC: UIViewController {
     @IBOutlet weak var menuBtn: UIButton!
     
     @IBOutlet weak var channelNameLbl: UILabel!
+    @IBOutlet weak var messageTextBox: UITextField!
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.bindToKeyboard()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(ChatVC.handleTap))
+        view.addGestureRecognizer(tap)
         menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
@@ -33,6 +38,10 @@ class ChatVC: UIViewController {
             })
         }
         
+    }
+    
+    @objc func handleTap() {
+        view.endEditing(true)
     }
     
     @objc func userDataDidChange(_ notif: Notification){
@@ -53,6 +62,22 @@ class ChatVC: UIViewController {
         getMessages()
     }
     
+    @IBAction func sendMessagePressed(_ sender: Any) {
+        if AuthService.instance.isLoggedIn {
+            guard let channelId = MessageService.instance.selectedChannel?.id else {return}
+            guard let message = messageTextBox.text else {return}
+            
+            SocketService.instance.addMessage(messageBody: message, userId: UserDataService.instance.id, channelId: channelId) { (success) in
+                
+                if success {
+                    self.messageTextBox.text = ""
+                    self.messageTextBox.resignFirstResponder()
+                }
+            }
+        }
+    }
+    
+    
     func onLoginGetMessages() {
         MessageService.instance.findAllChannel { (success) in
             if success {
@@ -68,8 +93,10 @@ class ChatVC: UIViewController {
     
     func getMessages() {
         guard let channelId = MessageService.instance.selectedChannel?.id else {return}
-        MessageService.instance.findAllMessagesForChannel(channelID: channelId) { (success) in
-            
+        MessageService.instance.findAllMessagesForChannel(channelId: channelId) { (success) in
+            if success {
+                return
+            }
         }
     }
 

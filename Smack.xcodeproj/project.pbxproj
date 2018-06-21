@@ -31,6 +31,8 @@
 		498FA28120D0C612004227E3 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 498FA27F20D0C612004227E3 /* ProfileVC.xib */; };
 		49BA497520DAC80900BA96DF /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BA497420DAC80900BA96DF /* SocketService.swift */; };
 		49BA497720DB1DA000BA96DF /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BA497620DB1DA000BA96DF /* Message.swift */; };
+		49BA497920DB4D8300BA96DF /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BA497820DB4D8300BA96DF /* KeyboardBoundView.swift */; };
+		49BA497B20DB50BA00BA96DF /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BA497A20DB50BA00BA96DF /* MessageCell.swift */; };
 		49FB04BC20D2F67E006B71C6 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB04BB20D2F67E006B71C6 /* MessageService.swift */; };
 		49FB04C120D2F72A006B71C6 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB04C020D2F72A006B71C6 /* Channel.swift */; };
 		76F139446335CE1B25FC8858 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A2B60BB562D7D8D7FFADB1E /* Pods_Smack.framework */; };
@@ -67,6 +69,8 @@
 		498FA27F20D0C612004227E3 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		49BA497420DAC80900BA96DF /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		49BA497620DB1DA000BA96DF /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		49BA497820DB4D8300BA96DF /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
+		49BA497A20DB50BA00BA96DF /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		49FB04BB20D2F67E006B71C6 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 		49FB04C020D2F72A006B71C6 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		6A2B60BB562D7D8D7FFADB1E /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +165,8 @@
 				497C6BB220D025EB00D724E1 /* AvatarCell.swift */,
 				497C6BB420D0927500D724E1 /* CircleImage.swift */,
 				496B0FA720D30A060033BA7B /* ChannelCell.swift */,
+				49BA497820DB4D8300BA96DF /* KeyboardBoundView.swift */,
+				49BA497A20DB50BA00BA96DF /* MessageCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -333,11 +339,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49BA497920DB4D8300BA96DF /* KeyboardBoundView.swift in Sources */,
 				49BA497520DAC80900BA96DF /* SocketService.swift in Sources */,
 				498FA28020D0C612004227E3 /* ProfileVC.swift in Sources */,
 				496B0FA820D30A060033BA7B /* ChannelCell.swift in Sources */,
 				492FAA4720C5DFBD006C1EFA /* ChannelVC.swift in Sources */,
 				497C6BB120D0147600D724E1 /* AvatarPickerVC.swift in Sources */,
+				49BA497B20DB50BA00BA96DF /* MessageCell.swift in Sources */,
 				492FAA5720CF21BD006C1EFA /* RoundedButton.swift in Sources */,
 				49BA497720DB1DA000BA96DF /* Message.swift in Sources */,
 				49FB04C120D2F72A006B71C6 /* Channel.swift in Sources */,
