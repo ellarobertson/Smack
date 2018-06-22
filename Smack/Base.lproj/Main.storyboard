@@ -50,7 +50,7 @@
                                         <state key="normal" image="smackBurger"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8DC-vm-z0o">
-                                        <rect key="frame" x="162.5" y="44.5" width="49.5" height="23.5"/>
+                                        <rect key="frame" x="163" y="44.5" width="49.5" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                         <color key="textColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -143,6 +143,12 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PY1-4q-mj0">
+                                <rect key="frame" x="8" y="605.5" width="34.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -153,8 +159,10 @@
                             <constraint firstItem="W63-r4-kxO" firstAttribute="bottom" secondItem="vBE-Df-h9k" secondAttribute="bottom" id="GSO-1L-kHk"/>
                             <constraint firstItem="jF3-XY-sKS" firstAttribute="top" secondItem="gnQ-Og-6NM" secondAttribute="top" id="NVg-qL-cFP"/>
                             <constraint firstItem="3hH-ll-vKs" firstAttribute="top" secondItem="jF3-XY-sKS" secondAttribute="bottom" id="U1O-ZD-gPn"/>
+                            <constraint firstItem="PY1-4q-mj0" firstAttribute="leading" secondItem="W63-r4-kxO" secondAttribute="leading" constant="8" id="UWw-bl-0jJ"/>
                             <constraint firstItem="W63-r4-kxO" firstAttribute="trailing" secondItem="2pW-zb-0kh" secondAttribute="trailing" constant="8" id="WeI-zM-3ew"/>
                             <constraint firstItem="2pW-zb-0kh" firstAttribute="centerY" secondItem="vBE-Df-h9k" secondAttribute="centerY" id="X4H-aM-tza"/>
+                            <constraint firstItem="vBE-Df-h9k" firstAttribute="top" secondItem="PY1-4q-mj0" secondAttribute="bottom" constant="5" id="dfW-SR-jIb"/>
                             <constraint firstItem="jF3-XY-sKS" firstAttribute="trailing" secondItem="W63-r4-kxO" secondAttribute="trailing" id="dzj-OH-Vsd"/>
                             <constraint firstItem="W63-r4-kxO" firstAttribute="trailing" secondItem="3hH-ll-vKs" secondAttribute="trailing" id="oVS-Nk-pW8"/>
                             <constraint firstItem="W63-r4-kxO" firstAttribute="trailing" secondItem="vBE-Df-h9k" secondAttribute="trailing" id="zT0-nS-1r1"/>
@@ -167,6 +175,7 @@
                         <outlet property="messageTextBox" destination="vBE-Df-h9k" id="6QB-nF-nTh"/>
                         <outlet property="sendButton" destination="2pW-zb-0kh" id="YKl-97-0Th"/>
                         <outlet property="tableView" destination="3hH-ll-vKs" id="zLE-BH-mRV"/>
+                        <outlet property="typingUsersLbl" destination="PY1-4q-mj0" id="xm5-GK-eTf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gKc-Ra-bCl" userLabel="First Responder" sceneMemberID="firstResponder"/>

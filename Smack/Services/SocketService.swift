@@ -14,7 +14,7 @@ class SocketService: NSObject {
     static let instance = SocketService()
     
     private let manager: SocketManager
-    private var socket: SocketIOClient
+    public private(set) var socket: SocketIOClient
     
     private override init() {
         
@@ -75,6 +75,15 @@ class SocketService: NSObject {
             }
         }
     }
+    
+    func getTypingUsers(_ completionHander: @escaping (_ typingUsers: [String: String]) -> Void){
+        socket.on("userTypingUpdate") { (dataArray, ack) in
+            guard let typingUsers = dataArray[0] as? [String: String] else {return}
+            completionHander(typingUsers)
+        }
+    }
+    
+
     
     
     
