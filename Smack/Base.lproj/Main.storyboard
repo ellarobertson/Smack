@@ -73,6 +73,9 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="messageBoxEditing:" destination="1qN-L1-Nxe" eventType="editingChanged" id="MlI-0t-Y5k"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pW-zb-0kh">
                                 <rect key="frame" x="337" y="632" width="30" height="30"/>
@@ -105,7 +108,7 @@
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZh-b1-Fp6">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZh-b1-Fp6">
                                                     <rect key="frame" x="78" y="48" width="274" height="10"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -162,6 +165,7 @@
                         <outlet property="channelNameLbl" destination="8DC-vm-z0o" id="0SM-NV-e7k"/>
                         <outlet property="menuBtn" destination="T3R-IT-Wq5" id="1ff-Qh-faA"/>
                         <outlet property="messageTextBox" destination="vBE-Df-h9k" id="6QB-nF-nTh"/>
+                        <outlet property="sendButton" destination="2pW-zb-0kh" id="YKl-97-0Th"/>
                         <outlet property="tableView" destination="3hH-ll-vKs" id="zLE-BH-mRV"/>
                     </connections>
                 </viewController>
